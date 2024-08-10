@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Facebooklogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:shape" >rectangle</item>
+
+    </style>
+
+    <style name="Theme.Facebooklogin" parent="Base.Theme.Facebooklogin" />
+</resources>

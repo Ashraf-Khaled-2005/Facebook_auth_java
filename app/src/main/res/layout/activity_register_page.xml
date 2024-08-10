@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <Button
+        android:id="@+id/Signup_btn"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:text="Signup"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/Regpass"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+
+        android:id="@+id/Regpass"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="@drawable/et_btn"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Signup_btn"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_btn"
+        app:layout_constraintStart_toStartOf="@+id/Signup_btn"
+        app:layout_constraintTop_toBottomOf="@+id/Regemail"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toTopOf="@+id/RegUseranme"
+        app:layout_constraintEnd_toEndOf="@+id/RegUseranme"
+        app:layout_constraintStart_toStartOf="@+id/RegUseranme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/face" />
+
+    <EditText
+        android:id="@+id/Regemail"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="@drawable/et_btn"
+        android:ems="10"
+        android:hint="Mobile Number OR Email"
+        android:inputType="text"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Regpass"
+        app:layout_constraintEnd_toEndOf="@+id/Regpass"
+        app:layout_constraintStart_toStartOf="@+id/Regpass"
+        app:layout_constraintTop_toBottomOf="@+id/RegUseranme"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/RegUseranme"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="@drawable/et_btn"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="text"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Regemail"
+        app:layout_constraintEnd_toEndOf="@+id/Regemail"
+        app:layout_constraintStart_toStartOf="@+id/Regemail"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+
+        android:id="@+id/Go_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/create_btn"
+        android:text="Already Have and Account"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgotten Password ?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Go_login"
+        app:layout_constraintEnd_toEndOf="@+id/Go_login"
+        app:layout_constraintStart_toStartOf="@+id/Go_login"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_btn"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
